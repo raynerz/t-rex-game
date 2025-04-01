@@ -8,14 +8,14 @@ class DinoGame {
         this.score = 0;
         this.isJumping = false;
         this.isGameOver = false;
-        this.gameSpeed = 3;
+        this.gameSpeed = 2; // Lower initial speed for more dramatic progression
         this.jumpHeight = 100;
         
         // Difficulty settings
         this.difficultyLevel = 0;
         this.baseJumpDuration = 1000;
         this.minJumpDuration = 800;
-        this.speedIncrement = 0.5; // Increased speed increment for more noticeable changes
+        this.speedIncrement = 1; // Doubled speed increment for more noticeable changes
         this.baseCactusSpacing = 300; // Base distance between cacti
         this.minCactusSpacing = 150; // Minimum distance between cacti
         this.spacingIncrement = 50; // How much to reduce spacing per level
@@ -168,7 +168,7 @@ class DinoGame {
     
     restart() {
         this.score = 0;
-        this.gameSpeed = 3;
+        this.gameSpeed = 2; // Reset to new initial speed
         this.difficultyLevel = 0;
         this.isGameOver = false;
         this.scoreElement.textContent = 'Score: 0';
