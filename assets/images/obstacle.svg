@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="80" viewBox="0 0 40 80" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <!-- Stem -->
+        <path d="M19,80 L19,30 C19,30 17,40 21,40 C25,40 21,30 21,30 L21,80" fill="#228B22"/>
+        
+        <!-- Leaves -->
+        <path d="M19,60 C15,58 10,62 15,65 C20,68 19,60 19,60" fill="#228B22"/>
+        <path d="M21,50 C25,48 30,52 25,55 C20,58 21,50 21,50" fill="#228B22"/>
+        
+        <!-- Petals Layer 1 (bottom) -->
+        <g id="petals-bottom" fill="#FFD700">
+            <!-- Outer petals with curves -->
+            <path d="M20,17 Q24,14 25,10 Q21,11 20,11 Q19,11 15,10 Q16,14 20,17" fill="#FFD700"/>
+            <path d="M27,20 Q31,18 34,15 Q31,13 30,13 Q29,13 27,12 Q26,16 27,20" fill="#FFD700"/>
+            <path d="M30,25 Q35,24 38,23 Q36,19 35,18 Q34,17 33,16 Q31,19 30,25" fill="#FFD700"/>
+            <path d="M27,30 Q31,32 34,35 Q31,37 30,37 Q29,37 27,38 Q26,34 27,30" fill="#FFD700"/>
+            <path d="M20,33 Q24,36 25,40 Q21,39 20,39 Q19,39 15,40 Q16,36 20,33" fill="#FFD700"/>
+            <path d="M13,30 Q9,32 6,35 Q9,37 10,37 Q11,37 13,38 Q14,34 13,30" fill="#FFD700"/>
+            <path d="M10,25 Q5,24 2,23 Q4,19 5,18 Q6,17 7,16 Q9,19 10,25" fill="#FFD700"/>
+            <path d="M13,20 Q9,18 6,15 Q9,13 10,13 Q11,13 13,12 Q14,16 13,20" fill="#FFD700"/>
+        </g>
+
+        <!-- Flower center -->
+        <circle cx="20" cy="25" r="7" fill="#663300"/>
+        
+        <!-- Petals Layer 2 (top) -->
+        <g id="petals-top" fill="#FFC500">
+            <!-- Inner petals with curves -->
+            <path d="M20,19 Q22,17 23,14 Q20,15 20,15 Q20,15 17,14 Q18,17 20,19" fill="#FFC500"/>
+            <path d="M24,21 Q27,20 29,18 Q27,16 26,16 Q25,16 24,15 Q23,18 24,21" fill="#FFC500"/>
+            <path d="M26,25 Q29,24 31,23 Q30,20 29,19 Q28,18 27,18 Q26,21 26,25" fill="#FFC500"/>
+            <path d="M24,29 Q27,30 29,32 Q27,34 26,34 Q25,34 24,35 Q23,32 24,29" fill="#FFC500"/>
+            <path d="M20,31 Q22,33 23,36 Q20,35 20,35 Q20,35 17,36 Q18,33 20,31" fill="#FFC500"/>
+            <path d="M16,29 Q13,30 11,32 Q13,34 14,34 Q15,34 16,35 Q17,32 16,29" fill="#FFC500"/>
+            <path d="M14,25 Q11,24 9,23 Q10,20 11,19 Q12,18 13,18 Q14,21 14,25" fill="#FFC500"/>
+            <path d="M16,21 Q13,20 11,18 Q13,16 14,16 Q15,16 16,15 Q17,18 16,21" fill="#FFC500"/>
+        </g>
+
+        <!-- Seeds -->
+        <g id="seeds" fill="#4A2500">
+            <circle cx="20" cy="25" r="1"/>
+            <circle cx="23" cy="25" r="1"/>
+            <circle cx="17" cy="25" r="1"/>
+            <circle cx="20" cy="22" r="1"/>
+            <circle cx="20" cy="28" r="1"/>
+            <circle cx="22" cy="23" r="1"/>
+            <circle cx="22" cy="27" r="1"/>
+            <circle cx="18" cy="23" r="1"/>
+            <circle cx="18" cy="27" r="1"/>
+        </g>
+    </g>
+</svg> 

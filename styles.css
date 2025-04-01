@@ -9,36 +9,42 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f7f7f7;
-}
-
-.game-container {
-    position: relative;
-    width: 600px;
-    height: 200px;
-    border-bottom: 2px solid #333;
-    overflow: hidden;
     background-color: #fff;
 }
 
+#game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/images/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #dino {
+    width: 40px;
+    height: 40px;
     position: absolute;
     bottom: 0;
-    width: 50px;
-    height: 50px;
-    background-color: #333;
-    border-radius: 5px;
-    transition: bottom 0.1s linear;
+    background-image: url('assets/images/character.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #cactus {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     width: 20px;
     height: 40px;
-    background-color: #2d5a27;
-    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    background-image: url('assets/images/obstacle.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #ground {
@@ -46,7 +52,9 @@ body {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background-color: #1A1A1A;
+    z-index: 2;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 #score {
@@ -55,7 +63,9 @@ body {
     right: 20px;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    color: #333;
+    color: #1A1A1A;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    z-index: 2;
 }
 
 #game-over {
@@ -67,6 +77,10 @@ body {
     font-size: 24px;
     color: #333;
     text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 2;
 }
 
 .hidden {
@@ -82,10 +96,10 @@ body {
         bottom: 0;
     }
     15% {
-        bottom: 100px;
+        bottom: 75px;
     }
     85% {
-        bottom: 100px;
+        bottom: 75px;
     }
     100% {
         bottom: 0;
