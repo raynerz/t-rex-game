@@ -28,6 +28,7 @@ body {
     height: 50px;
     background-color: #333;
     border-radius: 5px;
+    transition: bottom 0.1s linear;
 }
 
 #cactus {
@@ -73,17 +74,32 @@ body {
 }
 
 .jump {
-    animation: jump 0.5s linear;
+    animation: jump var(--jump-duration, 1s) cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes jump {
     0% {
         bottom: 0;
     }
-    50% {
+    15% {
+        bottom: 100px;
+    }
+    85% {
         bottom: 100px;
     }
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 } 
